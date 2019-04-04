@@ -1,0 +1,172 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900');
+body{
+  width: 100%;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+  background-color:#FFF;
+  ::selection { background-color: #E13300; color: white; }
+  ::-moz-selection { background-color: #E13300; color: white; }
+}
+.error-page{
+  position: fixed;
+  display: inline-block;
+  width:30%;
+  top: 250px; 
+  left: 50%;
+  transform:translateX(-50%);
+  padding: 1rem;
+  border-radius: 3px;
+  border: 1px solid grey;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+}
+.install-page{
+  position: fixed;
+  display: inline-block;
+  width:40%;
+  top: 5px; 
+  left: 50%;
+  transform:translateX(-50%);
+  padding: 1rem;
+  border-radius: 3px;
+  border: 1px solid grey;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background: repeating-linear-gradient(-45deg,transparent,transparent 10px,#e2dfdf 10px,#dedede 20px),linear-gradient(to bottom,rgba(226, 224, 224, 0.42),#FFF);
+}
+h1{
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase; 
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #C9C9C9, 0 3px 0 #BBBBBB, 0 4px 0 #B9B9B9, 0 5px 0 #AAAAAA, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+h2{
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #C9C9C9, 0 3px 0 #BBBBBB, 0 4px 0 #B9B9B9, 0 5px 0 #AAAAAA, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+fieldset.description{
+  color: #888585;
+  border-radius: 3px;
+  border: 1px #CCC solid;
+  line-height: 30px; 
+}
+label > input{
+  width: 60%;
+  height:20px;
+  float: right;
+  padding-left: 5px;
+  line-height:20px;
+}
+fieldset.info{
+  color: #888585;
+  border-radius: 3px;
+  border: 1px #CCC solid;
+  line-height: 30px;
+  width: 50%;
+  margin:0 auto; 
+}
+button{
+  outline: 0;
+  margin-top:15px;
+  float: right;
+  padding: 0.25rem 1rem;
+  font-size: 12px;
+  line-height: 1.5; 
+  color: #fff;
+  background-color: #5bc0de;
+  border: none;
+  border-radius: 2px;
+  font-size: 120%;
+}
+button:hover{
+  background-color: #5bc0de;
+  cursor:pointer;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+}
+li.error{
+  color:red;
+}
+div.input-field{
+  position: relative;
+  display: inline-block;
+  margin: 1rem 50%;
+  transform: translateX(-49%);
+}
+div.input-field input{
+  padding-left: 2px;
+  border: 0;
+  border-bottom: 1px solid #d6d6d6; 
+  outline: none;
+  font-size: 1rem;
+  -webkit-transition: 0.75s all ease;
+  -moz-transition: 0.75s all ease;
+  -o-transition: 0.75s all ease;
+  transition: 0.75s all ease;
+}
+div.input-field input:focus{  
+  border-bottom: 1px solid #06c8d2; 
+  -webkit-transition: 0.75s all ease;
+  -moz-transition: 0.75s all ease;
+  -o-transition: 0.75s all ease;
+  transition: 0.75s all ease;
+}
+div.input-field input~label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 11px;
+  color: #CCC; 
+  -webkit-transition: 0.75s all ease;
+  -moz-transition: 0.75s all ease;
+  -o-transition: 0.75s all ease;
+  transition: 0.75s all ease;
+}
+div.input-field input:focus~label{
+  position: absolute;
+  top: -0.75rem;
+  left:-5px;
+  font-size: 11px;
+  color: #06c8d2; 
+  -webkit-transition: 0.75s all ease;
+  -moz-transition: 0.75s all ease;
+  -o-transition: 0.75s all ease;
+  transition: 0.75s all ease;
+}
+::-webkit-input-placeholder {
+    color:    transparent;
+}
+:-moz-placeholder {
+   color:    transparent;
+   opacity:  1;
+}
+::-moz-placeholder { 
+   color:    transparent;
+   opacity:  1;
+}
+:-ms-input-placeholder { 
+   color:    transparent;
+}
+::-ms-input-placeholder { 
+   color:    transparent;
+}
+div.input-field input:not(:placeholder-shown){
+  border-bottom: 2px solid #06c8d2; 
+  -webkit-transition: 0.75s all ease;
+  -moz-transition: 0.75s all ease;
+  -o-transition: 0.75s all ease;
+  transition: 0.75s all ease;
+}
+div.input-field input:not(:placeholder-shown)~label{
+  position: absolute;
+  top: -0.75rem;
+  left:-5px;
+  font-size: 11px;
+  color: #06c8d2; 
+  -webkit-transition: 0.75s all ease;
+  -moz-transition: 0.75s all ease;
+  -o-transition: 0.75s all ease;
+  transition: 0.75s all ease;
+}
